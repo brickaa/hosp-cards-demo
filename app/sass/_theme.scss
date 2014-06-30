@@ -8,3 +8,26 @@ h3 { //paragraph header
 	text-transform: uppercase;
 	margin-top: 1em;
 }
+
+.hosp-card {
+	.hosp-name {
+
+	}
+	.card-row {
+		width: 100%;
+		margin: 0.25em;
+		.value-header {
+			font-weight: bold;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.value {
+			display: inline-block;
+			vertical-align: middle;
+			text-align: right;
+		}
+		p {
+			margin: 0.25em;
+		}
+	}
+}
