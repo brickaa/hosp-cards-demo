@@ -3,10 +3,10 @@
 	.card-row {
 		@include span-columns(12);
 		.value-header {
-			@include span-columns(4 of 12);
+			@include span-columns(6 of 12);
 		}
 		.value {
-			@include span-columns(8 of 12);
+			@include span-columns(6 of 12);
 		}
 	}
 }
