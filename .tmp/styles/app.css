@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box; }
+
+h3 {
+  color: #222222;
+  font: 700 0.875em Helvetica;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 1em; }
