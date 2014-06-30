@@ -50,6 +50,6 @@ h3 {
   .hosp-card .card-row .value {
     display: inline-block;
     vertical-align: middle;
-    text-align: right; }
+    text-align: left; }
   .hosp-card .card-row p {
     margin: 0.25em; }
