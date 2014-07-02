@@ -1,24 +1,24 @@
 .container {
-	@include outer-container();
+  @include outer-container();
 }
 .category-header {
-	@include span-columns(12);
+  @include span-columns(12);
 }
 .hosp-card-wrapper {
-	.hosp-card {
-		@include span-columns(12);
-		@include media($desktop) {
-			@include span-columns(4);
-			@include omega;
-		}		
-	}
-	.card-row {
-		@include span-columns(12);
-		.value-header {
-			@include span-columns(6 of 12);
-		}
-		.value {
-			@include span-columns(6 of 12);
-		}
-	}
+  .hosp-card {
+    @include span-columns(12);
+    @include media($desktop) {
+      @include span-columns(4);
+      @include omega;
+    }    
+  }
+  .card-row {
+    @include span-columns(12);
+    .value-header {
+      @include span-columns(6 of 12);
+    }
+    .value {
+      @include span-columns(6 of 12);
+    }
+  }
 }

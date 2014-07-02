@@ -1,50 +1,133 @@
 
 h3 { //paragraph header
-	color: rgb(34, 34, 34);
-	font: 700 0.875em Helvetica;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-	text-align: left;
-	text-transform: uppercase;
-	margin-top: 1em;
+  color: rgb(34, 34, 34);
+  font: 700 0.875em Helvetica;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 
 .hosp-card {
-	border: 1px solid $lt_gray;
-	margin: 0.25em;
-	.hosp-name {
-		h4 {
-		background: $violet;
-		margin: 0;
-		padding: 0.5em;
-		text-align: center;		
-		}
-	}
-	.card-row {
-		width: 100%;
-		padding: 0.25em;
+  border: 1px solid $lt_gray;
+  margin: 0.25em;
+  font-family: $helvetica;
+  margin: 0 0 1em;
+  width: 100%;
+  .hosp-name {
+    h4 {
+    background: $violet;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;    
+    }
+  }
+  .card-row {
+    width: 100%;
+    padding: 0.25em;
+      &:nth-child(odd) {
+        background-color: rgb(240, 240, 240);
+      }
+      &:nth-child(even) {
+        background-color: rgb(255, 255, 255);
+      }      
+    .value-header {
+      font-style: italic;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .value {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
+    p {
+      margin: 0.25em;
+    }
+  }
+    &:nth-child(odd) {
+      background-color: rgb(240, 240, 240);
+    }
 
-		.value-header {
-			font-style: italic;
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.value {
-			display: inline-block;
-			vertical-align: middle;
-			text-align: left;
-		}
-		p {
-			margin: 0.25em;
-		}
-	}
-	.even {
 
-	}
-	.odd {
-
-	}
-	.sub-header {
-		font-weight: bold;
-	}
+  .sub-header {
+    font-weight: bold;
+  }
 }
+
+
+// table {
+//   font-family: $helvetica;
+//   margin: 0 0 1em;
+//   width: 100%;
+
+//   th {
+//     border-bottom: 1px solid rgb(187, 187, 187);
+//     font-size: 1em;
+//     font-weight: 800;
+//     padding: 0 1em .25em;
+//     text-align: right;
+//     vertical-align: middle;
+
+//     &:first-child {
+//       text-align: left;
+//     }
+//   }
+
+//   td {
+//     font-size: .875em;
+//     padding: 8px 16px;
+//     text-align: right;
+
+//     &:first-child {
+//       text-align: left;
+//     }
+//   }
+
+//   tr {
+//     &:nth-child(odd) td {
+//       background-color: rgb(240, 240, 240);
+//     }
+//   }
+
+//   @include media($mobile) {
+//     display: block;
+
+//     thead,
+//     tbody,
+//     tr,
+//     th,
+//     td {
+//       display: block;
+//     }
+
+//     thead {
+//       tr {
+//         @include visually-hidden;
+//       }
+//     }
+
+//     td {
+//       border-bottom: 1px solid rgb(220, 220, 220);
+//       padding-left: 50%;
+//       position: relative;
+//       text-align: right;
+
+//       &:first-child {
+//         text-align: right;
+//       }
+
+//       &:before {
+//         content: attr(data-title);
+//         font-weight: bold;
+//         left: .5em;
+//         padding-right: 10px;
+//         position: absolute;
+//         text-align: left;
+//         white-space: nowrap;
+//         width: 45%;
+//       }
+//     }
+//   }
+// }
