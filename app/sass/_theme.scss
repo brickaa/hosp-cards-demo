@@ -10,14 +10,22 @@ h3 { //paragraph header
 }
 
 .hosp-card {
+	border: 1px solid $lt_gray;
+	margin: 0.25em;
 	.hosp-name {
-
+		h4 {
+		background: $violet;
+		margin: 0;
+		padding: 0.5em;
+		text-align: center;		
+		}
 	}
 	.card-row {
 		width: 100%;
-		margin: 0.25em;
+		padding: 0.25em;
+
 		.value-header {
-			font-weight: bold;
+			font-style: italic;
 			display: inline-block;
 			vertical-align: middle;
 		}
@@ -29,5 +37,14 @@ h3 { //paragraph header
 		p {
 			margin: 0.25em;
 		}
+	}
+	.even {
+
+	}
+	.odd {
+
+	}
+	.sub-header {
+		font-weight: bold;
 	}
 }
