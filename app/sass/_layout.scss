@@ -1,7 +1,7 @@
 .container {
   @include outer-container();
 }
-.category-header {
+.category-wrapper {
   @include span-columns(12);
 }
 .hosp-card-wrapper {
