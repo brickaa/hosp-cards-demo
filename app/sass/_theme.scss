@@ -1,21 +1,20 @@
-// body {
-//   background-color: $white;
-//   overflow-x: hidden;
-//   -webkit-font-smoothing: antialiased;
-// }
+body {
+  background-color: $white;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
 
-// .container {
-//     overflow-x: hidden;
-// }
+.container {
+    overflow-x: hidden;
+}
 
 h3 { //paragraph header
   color: rgb(34, 34, 34);
   font: 700 0.875em Helvetica;
   letter-spacing: 1px;
-  line-height: 1.4em;
   text-align: left;
   text-transform: uppercase;
-  margin-top: 1em;
+  margin: 0.25em 0.5em;
 }
 
 .hosp-card-wrapper {
@@ -99,7 +98,7 @@ h3 { //paragraph header
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
-  background: $yellow;
+  background: #ccc;
   color: #3d7489;
   text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
   box-shadow: 
@@ -112,8 +111,8 @@ h3 { //paragraph header
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 13px;
-  top: 7px;
+  left: 2px;
+  top: 4px;
   background: transparent url(../images/arrow_down.png) no-repeat center center;  
 }
 .ac-container input:checked + label:hover:after{
@@ -126,100 +125,26 @@ h3 { //paragraph header
   background: rgba(255, 255, 255, 0.5);
   margin-top: -1px;
   overflow: hidden;
-  height: 0px;
+  max-height: 0px;
   position: relative;
   z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  -o-transition: max-height 0.8s;
+  -ms-transition: max-height 0.8s;
+  transition: max-height 0.8s;
 }
 
 .ac-container input:checked ~ article{
-  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  -o-transition: max-height 0.8s;
+  -ms-transition: max-height 0.8s;
+  transition: max-height 0.8s;
   box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
 
 .ac-container input:checked ~ article.ac-large{
-  height: auto;
+  // height: auto;
+  max-height: 1000px;
 }
-
-// table {
-//   font-family: $helvetica;
-//   margin: 0 0 1em;
-//   width: 100%;
-
-//   th {
-//     border-bottom: 1px solid rgb(187, 187, 187);
-//     font-size: 1em;
-//     font-weight: 800;
-//     padding: 0 1em .25em;
-//     text-align: right;
-//     vertical-align: middle;
-
-//     &:first-child {
-//       text-align: left;
-//     }
-//   }
-
-//   td {
-//     font-size: .875em;
-//     padding: 8px 16px;
-//     text-align: right;
-
-//     &:first-child {
-//       text-align: left;
-//     }
-//   }
-
-//   tr {
-//     &:nth-child(odd) td {
-//       background-color: rgb(240, 240, 240);
-//     }
-//   }
-
-//   @include media($mobile) {
-//     display: block;
-
-//     thead,
-//     tbody,
-//     tr,
-//     th,
-//     td {
-//       display: block;
-//     }
-
-//     thead {
-//       tr {
-//         @include visually-hidden;
-//       }
-//     }
-
-//     td {
-//       border-bottom: 1px solid rgb(220, 220, 220);
-//       padding-left: 50%;
-//       position: relative;
-//       text-align: right;
-
-//       &:first-child {
-//         text-align: right;
-//       }
-
-//       &:before {
-//         content: attr(data-title);
-//         font-weight: bold;
-//         left: .5em;
-//         padding-right: 10px;
-//         position: absolute;
-//         text-align: left;
-//         white-space: nowrap;
-//         width: 45%;
-//       }
-//     }
-//   }
-// }
