@@ -14,7 +14,8 @@ h3 { //paragraph header
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
-  margin: 0.25em 0.5em;
+  margin: 0 0.5em;
+  float: left;
 }
 
 .hosp-card-wrapper {
@@ -26,6 +27,7 @@ h3 { //paragraph header
   font-family: $helvetica;
   position: relative;
   width: 100%;
+  overflow: hidden;
   header {
     h4 {
       font-size: 0.8em;
@@ -67,6 +69,12 @@ h3 { //paragraph header
     }
   }
 }
+.fa {
+  float: left;
+}
+.fa-chevron-down {
+  display: none;
+}
 .ac-container{
   width: 100%;
   margin: 10px auto 30px auto;
@@ -79,6 +87,7 @@ h3 { //paragraph header
   z-index: 20;
   display: block;
   cursor: pointer;
+  overflow: hidden;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
   background: #ffffff;
   background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
@@ -104,19 +113,26 @@ h3 { //paragraph header
   box-shadow: 
     0px 0px 0px 1px rgba(155,155,155,0.3), 
     0px 2px 2px rgba(0,0,0,0.1);
+  .fa-chevron-right {
+    display: none;
+  }
+  .fa-chevron-down {
+    display: block;
+  }
 }
 .ac-container label:hover:after,
-.ac-container input:checked + label:hover:after{
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 2px;
-  top: 4px;
-  background: transparent url(../images/arrow_down.png) no-repeat center center;  
+.ac-container input:checked + label:hover:after ~ label.fa{
+
+  // content: '';
+  // position: absolute;
+  // width: 24px;
+  // height: 24px;
+  // left: 2px;
+  // top: 4px;
+  // background: transparent url(../images/arrow_down.png) no-repeat center center;  
 }
 .ac-container input:checked + label:hover:after{
-  background-image: url(../images/arrow_up.png);
+  // background-image: url(../images/arrow_up.png);
 }
 .ac-container input{
   display: none;
