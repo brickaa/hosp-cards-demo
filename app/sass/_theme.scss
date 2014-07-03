@@ -1,3 +1,12 @@
+// body {
+//   background-color: $white;
+//   overflow-x: hidden;
+//   -webkit-font-smoothing: antialiased;
+// }
+
+// .container {
+//     overflow-x: hidden;
+// }
 
 h3 { //paragraph header
   color: rgb(34, 34, 34);
@@ -9,21 +18,25 @@ h3 { //paragraph header
   margin-top: 1em;
 }
 
+.hosp-card-wrapper {
+  width: 98.5%;
+}
 .hosp-card {
   border: 1px solid $lt_gray;
   margin: 0.25em;
   font-family: $helvetica;
-  width: 100%;
+  position: relative;
+  width: 98.5%;
   header {
     h4 {
-      font-size: 1em;
+      font-size: 0.8em;
       background: $teal;
       margin: 0;
       padding: 0.5em;
       text-align: center;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;    
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
+      // overflow: hidden;    
     }
   }
   .card-row {
@@ -34,22 +47,25 @@ h3 { //paragraph header
     &:nth-child(odd) {
       background-color: rgb(240, 240, 240);
     }     
-    .value-header {
-      font-style: italic;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .value {
-      display: inline-block;
-      vertical-align: middle;
-      text-align: left;
-    }
     p {
       margin: 0.25em;
     }
   }
   .sub-header {
     font-weight: bold;
+  }
+  .value-header {
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .value {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    &:nth-child(even) {
+      text-align: right;
+    }
   }
 }
 
